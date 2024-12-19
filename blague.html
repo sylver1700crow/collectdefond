@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci pour votre don</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        #blague {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Merci pour votre don !</h1>
+    <p>Et voici une blague pour vous remercier :</p>
+    <div id="blague"></div>
+
+    <script>
+        const blagues = [
+            "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau !",
+            "Quel est le comble pour un électricien ? De ne pas être au courant !",
+            "Pourquoi les squelettes ne se battent jamais ? Parce qu'ils n'ont pas de tripes !",
+            "Quelle est la différence entre un oiseau et un voleur ? L'oiseau vole et le voleur dérobe.",
+            "C'est l'histoire d'un citron qui avait une peine... et il était pressé."
+        ];
+        const randomIndex = Math.floor(Math.random() * blagues.length);
+        document.getElementById('blague').textContent = blagues[randomIndex];
+    </script>
+</body>
+</html>
